@@ -14,3 +14,6 @@ Display Results
 
 Details
 ![Image](https://github.com/KeigoAlexTanaka/Restaurant_App/blob/master/src/assets/img04.png?raw=true)
+
+Wireframe
+![Image](https://github.com/KeigoAlexTanaka/Restaurant_App/blob/master/src/assets/wireframe.jpg?raw=true)
