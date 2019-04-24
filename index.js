@@ -3,6 +3,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 const app = express();
 const port = process.env.PORT || 5000;
@@ -12,8 +13,11 @@ const yelp = require('yelp-fusion');
 const apiKey = process.env.REACT_APP_API_KEY;
 const client = yelp.client(apiKey);
 
+// Serve static files from the React app
+app.use(express.static(path.join(__dirname, 'client/build')));
+
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/public/index.html'));
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
 });
 
 app.post('/api/world', (req, res) => {
@@ -31,7 +35,6 @@ app.post('/api/world', (req, res) => {
 });
 	
 app.listen(port, () => console.log(`Listening on port ${port}`));
-
 
 // {
 // "id": "OFfZUS-nu6NDnsWe1B2bUQ",
