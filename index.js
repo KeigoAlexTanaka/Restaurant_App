@@ -13,10 +13,6 @@ const yelp = require('yelp-fusion');
 const apiKey = 'E8q8hY5_3_HPDf76AUSIpb_uIRB7wz4r_SQ8k56Qm4F6I9azKt1e7pxOScJB9_Y9ymO02V9Vajq8SuX30PCehg5cq6zbLvwebHqSq2NASlWHGskH7HziYKYn2hy_XHYx';
 const client = yelp.client(apiKey);
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname+'/client/public/index.html'));
-});
-
 app.post('/api/world', (req, res) => {
 	client.search({
   "term":`${req.body.post}`,
@@ -29,6 +25,10 @@ app.post('/api/world', (req, res) => {
 	});
 });
 	
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/build/index.html'));
+});
+
 app.listen(port, () => console.log(`Listening on port ${port}`));
 
 
