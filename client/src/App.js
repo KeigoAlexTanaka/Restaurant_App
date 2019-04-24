@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Route, Link } from 'react-router-dom';
 import './App.css';
 import { createBrowserHistory } from 'history';
-import history from './history.js'
+import history from './history.js';
 // import Template from './components/Template/';
 
 class App extends Component {
@@ -96,15 +96,15 @@ class App extends Component {
           <p>
             <strong>Yɘlp</strong>
           </p>
-          <input
-            className="is-size-1"
-            type="text"
-            value={this.state.post}
-            onChange={e => this.setState({ post: e.target.value })}
-          />
-          <button className="button is-danger is-large" type="submit">
-            Search
-          </button>
+            <input
+              className="is-size-1"
+              type="text"
+              value={this.state.post}
+              onChange={e => this.setState({ post: e.target.value })}
+            />
+            <button className="button is-danger is-large" type="submit">
+              Search
+            </button>
         </form>
         </div>
         <p>This app is powered by <a href="https://www.yelp.com/fusion">Yelp Fusion API</a></p>
