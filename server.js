@@ -12,6 +12,10 @@ const yelp = require('yelp-fusion');
 const apiKey = process.env.REACT_APP_API_KEY;
 const client = yelp.client(apiKey);
 
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname+'/client/public/index.html'));
+});
+
 app.post('/api/world', (req, res) => {
 	client.search({
   "term":`${req.body.post}`,
