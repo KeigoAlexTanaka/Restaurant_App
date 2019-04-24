@@ -1,20 +1,19 @@
 {
-  "name": "example-create-react-app-express",
+  "name": "rando",
   "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "heroku-postbuild": "cd client && npm install && npm run build",
-    "client": "cd client && npm start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\""
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "dotenv": "^7.0.0",
     "express": "^4.16.4",
+    "password-generator": "^2.2.0",
     "yelp-fusion": "^3.0.0"
-  },
-  "devDependencies": {
-    "concurrently": "^4.0.1"
   }
 }

@@ -1,22 +1,31 @@
 .App {
   text-align: center;
+  font-family: "Courier New", monospace;
+  width: 100%;
 }
 
-.home{
-  background:url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
-  width:100vw;
-  height:100vh;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 100px;
-  color:white; 
+h1 {
+  font-weight: normal;
+  font-size: 42px;
 }
 
-.search{
-  border: 5px solid red;
+.passwords {
+  list-style: none;
+  padding: 0;
+  font-size: 32px;
+  margin-bottom: 2em;
 }
 
-.details{
-  border: 5px solid blue;
+.more {
+  font-size: 32px;
+  font-family: "Courier New", monospace;
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 10px 25px;
+}
+.more:hover {
+  background-color: #FDD836;
+}
+.more:active {
+  background-color: #FFEFA9;
 }
