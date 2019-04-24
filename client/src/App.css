@@ -1,0 +1,22 @@
+.App {
+  text-align: center;
+}
+
+.home{
+  background:url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  width:100vw;
+  height:100vh;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 100px;
+  color:white; 
+}
+
+.search{
+  border: 5px solid red;
+}
+
+.details{
+  border: 5px solid blue;
+}
