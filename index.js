@@ -27,7 +27,6 @@ app.post('/api/search', (req, res) => {
 app.post('/api/detail', (req, res) => {
 	client.business(`${req.body.post}`)
 	.then(response => {
-	  console.log(response.jsonBody);
 	  const result = response.jsonBody;
 	  res.send(result);
 	}).catch(e => {
@@ -41,5 +40,3 @@ app.get('*', (req, res) => {
 
 const port = process.env.PORT || 5000;
 app.listen(port);
-
-console.log(`Server listening on ${port}`);

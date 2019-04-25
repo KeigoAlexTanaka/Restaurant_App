@@ -1,12 +1,13 @@
 # YARA (Yet Another Restaurant App)
 
+[Link](https://sleepy-anchorage-15837.herokuapp.com/) to deployed app.
+
+This app is a project that I created to practice my skills in making API calls and creating websites in React. Throughout this project I learned how to deploy a website via Heroku and how to set up a back-end server using Express with NodeJS.
+
+Thanks to Dave Ceddia for [tutorial](https://daveceddia.com/deploy-react-express-app-heroku/) on heroku deployment with express.
+
 This app is powered by Zomato
 https://developers.zomato.com/api
-
-Will look into Algolia for Autocomplete, Mapbox to display maps, and Google Places API for Geosearch if I have time.
-https://www.algolia.com/
-https://www.mapbox.com/
-https://developers.google.com/places/web-service/intro
 
 Home
 ![Image](https://github.com/KeigoAlexTanaka/Restaurant_App/blob/master/client/src/assets/img01.png?raw=true)
