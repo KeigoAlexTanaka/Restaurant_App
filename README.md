@@ -6,8 +6,7 @@ This app is a project that I created to practice my skills in making API calls a
 
 Thanks to Dave Ceddia for [tutorial](https://daveceddia.com/deploy-react-express-app-heroku/) on heroku deployment with express.
 
-This app is powered by Zomato
-https://developers.zomato.com/api
+This app is powered by [Yelp Fusion API](https://www.yelp.com/fusion)
 
 Home
 ![Image](https://github.com/KeigoAlexTanaka/Restaurant_App/blob/master/client/src/assets/img01.png?raw=true)
