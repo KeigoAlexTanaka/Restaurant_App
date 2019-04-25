@@ -19,6 +19,7 @@ class Home extends Component {
                 placeholder="search"
                 value={this.props.search}
                 onChange={(e)=>this.props.onChange(e)}
+                required
               />
             </div>
             <div>
@@ -30,6 +31,7 @@ class Home extends Component {
                 placeholder="location"
                 value={this.props.location}
                 onChange={(e)=>this.props.onChange(e)}
+                required
               />
             </div>
             <br />

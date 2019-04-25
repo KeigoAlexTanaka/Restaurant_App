@@ -54,6 +54,9 @@ class App extends Component {
   }
 
   render() {
+    if(!this.state.restaurants){
+      history.replace(`/`);
+    }
     return (
       <div className="App">
         <Route exact path="/" render={()=>
