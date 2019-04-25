@@ -1,22 +1,80 @@
 .App {
   text-align: center;
+  background:url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
 }
 
 .home{
-  background:url('https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
   width:100vw;
   height:100vh;
   display:flex;
   flex-direction: column;
   justify-content: center;
+  color:white; 
+}
+
+.link{
+  color:black;
+}
+
+.link:hover{
+  color:white;
+  background: red;
+}
+
+strong{
   font-size: 100px;
   color:white; 
 }
 
+nav{
+  position: absolute;
+  top:0;
+  text-align: center;
+  width:100%;
+  background: gray;
+}
+
+button{
+  /*border:none;*/
+}
+
+footer{
+  background: white;
+}
+
 .search{
-  border: 5px solid red;
+  background: #B7B7B7FF;
+  color:black;
+  font-size: 2em;
+  min-width: 300px;
+  min-height:300px;
+}
+
+.search:hover{
+  color:white;
 }
 
 .details{
-  border: 5px solid blue;
+  display:flex;
+  font-size: 2em;
+  text-align: left;
+  background: white;
+  color:white;
+  margin:0 100%;
+}
+
+.details-image {
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  max-height: 500px;
+  max-width: 500px;
+}
+
+.center-cropped {
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  max-height: 200px;
+  max-width: 100%;
 }
